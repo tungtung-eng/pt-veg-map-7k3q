@@ -1,5 +1,5 @@
 // 葡萄牙素食地圖 離線快取（產出網站.py 自動產生，不要手改）
-const CACHE = "pvm-e3e70d9054";
+const CACHE = "pvm-f076cb11e7";
 const FILES = ["./", "./index.html", "./manifest.webmanifest", "./icon-180.png", "./icon-512.png"];
 self.addEventListener("install", (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(FILES)).then(() => self.skipWaiting()));
